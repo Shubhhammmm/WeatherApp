@@ -72,6 +72,13 @@ function App() {
             <h6 className="wetherTemperature">
               {(data?.main?.temp - 276.15).toFixed()}°C
             </h6>
+            <h3>
+              Weather Speed - {(data?.wind?.speed)}KPH
+            </h3>
+
+            <h3>
+              Weather Conditions - {(data?.weather[0].main)}
+            </h3>
           </div>
         </div>
 
